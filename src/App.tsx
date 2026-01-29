@@ -33,10 +33,6 @@ const App = () => (
           <Route path = "/it-support*" element = {<ITSupport/>} />
           <Route path = "/forgot-password*" element = {<ForgotPassword/>} />
 
-           <Route index element={<UsageReports />} /> {/* default tab */}
-              <Route path="medical" element={<MedicalStats />} />
-              <Route path="emergency" element={<EmergencyMetrics />} />
-            
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
