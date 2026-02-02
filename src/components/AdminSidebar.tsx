@@ -1,5 +1,6 @@
 import { NavLink, useLocation } from "react-router-dom";
 import { cn } from "@/lib/utils";
+import { Calendar } from "lucide-react";
 import logo from "/public/Medilogo.png"
 import {
   LayoutDashboard,
@@ -63,6 +64,7 @@ function SidebarItem({ to, icon: Icon, label, children }: SidebarItemProps) {
                 <span className="w-1.5 h-1.5 rounded-full bg-current" />
                 {child.label}
               </NavLink>
+
             ))}
           </div>
         )}
@@ -100,12 +102,7 @@ export function AdminSidebar({ isOpen, onClose }: AdminSidebarProps) {
       to: "/admin/users",
       icon: Users,
       label: "Users & Roles",
-      children: [
-        { to: "/admin/users", label: "All Users" },
-        { to: "/admin/users/doctors", label: "Doctors" },
-        { to: "/admin/users/emt", label: "EMT Teams" },
-        { to: "/admin/users/staff", label: "Staff" },
-      ],
+    
     },
     {
       to: "/admin/hospital",
@@ -117,6 +114,11 @@ export function AdminSidebar({ isOpen, onClose }: AdminSidebarProps) {
         { to: "/admin/hospital/integrations", label: "Integrations" },
       ],
     },
+
+     { to: "/admin/appointments", 
+      icon: Calendar, 
+      label: "Appointments" },
+
     {
       to: "/admin/reports",
       icon: BarChart3,

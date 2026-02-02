@@ -8,6 +8,7 @@ import ReportsPage from "./ReportsPage";
 import SecurityPage from "./SecurityPage";
 import EmergencyControlsPage from "./EmergencyControlsPage";
 import SettingsPage from "./SettingsPage";
+import { Outlet } from "react-router-dom";
 
 export default function AdminDashboard() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -35,6 +36,7 @@ export default function AdminDashboard() {
             <Route path="emergency" element={<EmergencyControlsPage />} />
             <Route path="settings" element={<SettingsPage />} />
           </Routes>
+          <Outlet/>
         </main>
       </div>
     </div>

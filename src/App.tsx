@@ -14,6 +14,8 @@ import ForgotPassword from "./pages/forgot-password";
 import UsageReports from "./pages/admin/ReportsPage";
 import MedicalStats from "./pages/admin/ReportsPage";
 import EmergencyMetrics from "./pages/admin/ReportsPage";
+import DoctorAppointmentsPage from "@/pages/doctor/AppointmentsPage";
+import AdminAppointmentsPage from "@/pages/admin/AppointmentsPage";
 
 const queryClient = new QueryClient();
 
@@ -32,6 +34,8 @@ const App = () => (
           <Route path="*" element={<NotFound />} />
           <Route path = "/it-support*" element = {<ITSupport/>} />
           <Route path = "/forgot-password*" element = {<ForgotPassword/>} />
+          <Route path="/doctor/appointments" element={<DoctorAppointmentsPage />} />
+<Route path="/admin/appointments" element={<AdminAppointmentsPage />} />
 
         </Routes>
       </BrowserRouter>
