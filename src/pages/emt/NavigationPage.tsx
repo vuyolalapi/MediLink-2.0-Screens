@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/Badge";
+import MiniMap from "../../components/map"
 import {
   Navigation,
   MapPin,
@@ -103,13 +104,8 @@ export default function NavigationPage() {
           </div>
 
           {/* Mini Map Placeholder */}
-          <div className="mt-6 h-[200px] rounded-lg bg-muted/50 border border-border flex items-center justify-center">
-            <div className="text-center text-muted-foreground">
-              <Navigation className="w-12 h-12 mx-auto mb-2 opacity-50" />
-              <p>Map View</p>
-              <p className="text-sm">GPS Navigation Active</p>
-            </div>
-          </div>
+         <MiniMap />
+
         </CardContent>
       </Card>
 

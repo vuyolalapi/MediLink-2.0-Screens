@@ -1,4 +1,4 @@
-import  Logo  from "/public/Medilogo.png";
+import  Logo  from "/Medilogo.png";
 import { Button } from "./ui/button";
 import { LogOut, Bell, Menu } from "lucide-react";
 

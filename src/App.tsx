@@ -35,7 +35,7 @@ const App = () => (
           <Route path = "/it-support*" element = {<ITSupport/>} />
           <Route path = "/forgot-password*" element = {<ForgotPassword/>} />
           <Route path="/doctor/appointments" element={<DoctorAppointmentsPage />} />
-<Route path="/admin/appointments" element={<AdminAppointmentsPage />} />
+          <Route path="/admin/appointments" element={<AdminAppointmentsPage />} />
 
         </Routes>
       </BrowserRouter>

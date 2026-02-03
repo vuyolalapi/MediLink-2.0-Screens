@@ -33,9 +33,9 @@ export default function DoctorDashboard() {
       
       <div className="flex-1 flex flex-col min-w-0">
         <DashboardHeader
-          userName="Dr. Sarah Johnson"
-          role="Doctor"
-          department="Cardiology"
+          userName=""
+          role=""
+          department=""
           onMenuClick={() => setSidebarOpen(true)}
           onLogout={() => navigate("/")}
         />
